@@ -2,6 +2,7 @@ import zipfile
 import PyPDF2
 from io import BytesIO
 import pandas as pd
+from ziper import ziper
 
 
 def test_reader():
@@ -29,6 +30,5 @@ def test_reader():
                     assert 'e' in df.columns
 
 
-
-
+ziper()
 test_reader()
